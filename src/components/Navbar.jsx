@@ -2,7 +2,7 @@ import React from 'react';
 import { IoCartSharp } from "react-icons/io5";
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import logo from "../assets/Ecomzylogo.png"
+import logo from "../assets/logo/Ecomzylogo.png"
 
 const Navbar = () => {
 
