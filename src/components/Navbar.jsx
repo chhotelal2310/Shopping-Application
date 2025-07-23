@@ -2,6 +2,7 @@ import React from 'react';
 import { IoCartSharp } from "react-icons/io5";
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import logo from "../assets/Ecomzylogo.png"
 
 const Navbar = () => {
 
@@ -10,7 +11,7 @@ const Navbar = () => {
     <div className="py-2.5 w-full shadow-md fixed top-0 bg-blue-950 font-roboto text-white z-20">
       <div className="flex justify-between items-center max-w-[70%] mx-auto">
         <NavLink to="/">
-          <img src="/public/Ecomzylogo.png" alt="logo" className="w-40 h-10 cursor-pointer" />
+          <img src={logo} alt="logo" className="w-40 h-10 cursor-pointer" />
         </NavLink>
 
         <div className="flex items-center space-x-6">
