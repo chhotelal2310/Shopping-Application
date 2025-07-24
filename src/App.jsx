@@ -8,10 +8,10 @@ const App = () => {
       <div>
         <Navbar />
       </div>
-       <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/card" element={<CardDetails />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/card" element={<CardDetails />} />
+      </Routes>
     </>
   );
 };

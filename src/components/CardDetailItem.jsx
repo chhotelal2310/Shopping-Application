@@ -29,11 +29,11 @@ const CardDetailItem = ({ item }) => {
         />
       </div>
       <div className="space-y-1.5 w-full">
-        <h2 className="font-bold">{sortTitle(item?.title)}</h2>
-        <p className="text-sm">{ sortDescriptions(item?.description)}</p>
+        <h2 className="font-bold text-xs sm:text-base">{sortTitle(item?.title)}</h2>
+        <p className="text-xs sm:text-sm">{ sortDescriptions(item?.description)}</p>
         <div className="flex justify-between items-center">
-          <span className="font-semibold text-green-500"> ${item?.price}</span>
-          <MdDelete size={28} onClick={removeFromCard} className="cursor-pointer text-red-500" />
+          <span className="font-semibold  text-xs sm:text-base text-green-500"> ${item?.price}</span>
+          <MdDelete onClick={removeFromCard} className="cursor-pointer text-red-500 size-4 sm:size-8" />
         </div>
       </div>
     </div>

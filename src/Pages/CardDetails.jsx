@@ -27,15 +27,15 @@ const CardDetails = () => {
             </div>
             <div className="w-full rounded-lg border py-4 px-3 mb-12 border-gray-200 shadow-[0px_1px_5px_1px_rgba(0,_0,_0,_0.1)]">
               <div className="flex flex-col justify-center items-center">
-                <p className="text-2xl font-medium text-green-500">Your Card Summary</p>
+                <p className="text-base md:text-xl xl:text-2xl font-medium text-green-500">Your Card Summary</p>
 
-                <div className="w-full mt-6 flex items-center justify-between text-xl font-normal">
+                <div className="w-full mt-6 flex items-center justify-between text-xs sm:text-xl font-normal">
                   <p>Total item : {Card?.length}</p>
                   <p>
                     Total Amount {" "}
                     <span className="font-medium text-green-500">${totalAmount.toFixed(2)}</span>
                   </p>
-                  <button className="border border-gray-300 px-6 py-0.5 rounded-md font-normal cursor-pointer bg-green-600 text-white hover:bg-green-500">
+                  <button className="border border-gray-300 px-1 sm:px-6 py-0.5 rounded-md font-normal cursor-pointer bg-green-600 text-white hover:bg-green-500">
                     Checkout Now
                   </button>
                 </div>
