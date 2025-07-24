@@ -20,7 +20,7 @@ const CardDetails = () => {
       {Card?.length>0? (
         <>
           <div className="flex flex-col w-full max-w-[90%] xl:max-w-[70%] mx-auto space-y-6">
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-5 gap-y-5">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-5">
               {Card?.map((item, index) => (
                 <CardDetailItem key={index} item={item} />
               ))}
@@ -29,13 +29,13 @@ const CardDetails = () => {
               <div className="flex flex-col justify-center items-center">
                 <p className="text-base md:text-xl xl:text-2xl font-medium text-green-500">Your Card Summary</p>
 
-                <div className="w-full mt-6 flex items-center justify-between text-xs sm:text-xl font-normal">
+                <div className="w-full mt-6 max-[439px]:flex-col max-[439px]:gap-2 flex items-center justify-between text-xs sm:text-xl font-normal">
                   <p>Total item : {Card?.length}</p>
                   <p>
-                    Total Amount {" "}
+                    Total Amount : {" "}
                     <span className="font-medium text-green-500">${totalAmount.toFixed(2)}</span>
                   </p>
-                  <button className="border border-gray-300 px-1 sm:px-6 py-0.5 rounded-md font-normal cursor-pointer bg-green-600 text-white hover:bg-green-500">
+                  <button className="border border-gray-300 max-[439px]:px-2.5 max-[439px]:py-1.5 sm:px-6 py-0.5 rounded-md font-normal cursor-pointer bg-green-600 text-white hover:bg-green-500">
                     Checkout Now
                   </button>
                 </div>
