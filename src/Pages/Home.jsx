@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchProductData();
-  }, []);
+  }, [posts]);
 
   return (
     <>
