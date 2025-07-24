@@ -36,7 +36,10 @@ const Home = () => {
             ))}
           </div>
         ) : (
-          <></>
+          <>
+          <div className="w-full h-full justify-center items-center">
+            <h1>Data Not Found</h1>
+            </div></>
         )}
       </div>
     </>
