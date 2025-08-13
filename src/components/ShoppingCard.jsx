@@ -14,12 +14,13 @@ const ShoppingCard = ({ CardItem }) => {
   };
 
   const sortDescriptions = (str) => {
-    if (!str) return str;
+  if (!str) return str;
 
-    if (str.length < 40) return str;
+  if (str.length < 40) return str;
 
-    return str.split(" ").slice(0, 10).join(" ") + "...";
-  };
+  return str.split(/[ %/]/).slice(0, 10).join(" ") + "...";
+};
+
 
   const sortTitle = (str) => {
     return str.split(" ").slice(0, 6).join(" ") + "...";
@@ -27,7 +28,7 @@ const ShoppingCard = ({ CardItem }) => {
 
   return (
     <>
-      <div className="w-full max-w-65 flex flex-col justify-between rounded-lg px-3 py-3 border border-gray-200 shadow-[0px_1px_5px_1px_rgba(0,_0,_0,_0.1)]
+      <div className="w-full flex flex-col justify-between rounded-lg px-3 py-3 border border-gray-200 shadow-[0px_1px_5px_1px_rgba(0,_0,_0,_0.1)]
        hover:scale-105 transition duration-300 ease-in">
         <div className="w-full px-4 space-y-3">
           <h3 className="text-[17px] font-semibold">

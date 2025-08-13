@@ -8,10 +8,10 @@ import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <ThemeProvider>
-      <Provider store={store}>
+    <Provider store={store}>
+      <ThemeProvider>
         <App />
-      </Provider>
-    </ThemeProvider>
+      </ThemeProvider>
+    </Provider>
   </BrowserRouter>
 );

@@ -14,7 +14,7 @@ const Navbar = () => {
   const Card = useSelector((state) => state.Card);
   return (
     <div className="py-2.5 w-full shadow-md fixed top-0 bg-blue-950 font-roboto text-white z-20">
-      <div className="flex justify-between items-center max-w-[92%] sm:max-w-[70%] mx-auto">
+      <div className="flex justify-between items-center max-w-[90%] sm:max-w-[85%] mx-auto">
         <NavLink to="/">
           <img
             src={logo}
@@ -29,10 +29,10 @@ const Navbar = () => {
           </NavLink>
           <div>
            {theme==="dark" &&
-             <MdDarkMode size={30} className="cursor-pointer" onClick={()=>setTheme("light")}/>
+             <MdLightMode size={30} className="cursor-pointer" onClick={()=>setTheme("light")}/>
            }
             {theme==="light" &&
-             <MdLightMode size={30} className="cursor-pointer" onClick={()=>setTheme("dark")}/>
+             <MdDarkMode size={30} className="cursor-pointer" onClick={()=>setTheme("dark")}/>
            }
           </div>
           <NavLink to="/card">

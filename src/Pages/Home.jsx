@@ -26,11 +26,11 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <div className="dark:bg-gary bg-white">
         {loading ? (
           <Spinner />
         ) : posts?.length > 0 ? (
-          <div className="w-full grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-[80%] mx-auto pt-20 pb-5 gap-5 font-robotor">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-[85%] mx-auto pt-20 pb-5 gap-3.5 font-roboto dark:bg-gary bg-white">
             {posts?.map((item, index) => (
               <ShoppingCard key={index} CardItem={item} />
             ))}
